@@ -97,7 +97,7 @@ const handler = createMcpHandler(
         get_hydra_service_help_command: { description: "Generate a command to view Hydra module-specific help" }
       }
     }
-  },
+  } as any,
   { basePath: "", verboseLogs: true, maxDuration: 60, disableSse: true }
 );
 
